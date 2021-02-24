@@ -1,0 +1,76 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #5E9EA0;
+  font-family: Arial, sans-serif;
+}
+
+.user-card{
+  width: 300px;
+  margin: 20vh auto 0 auto;
+}
+
+.upper-block{
+  height: 150px;
+  background-color: #E85B26;
+}
+
+.lower-block{
+  height: 250px;
+  background-color: #FFFFFF;
+}
+
+.img-container{
+  background-color: #90DEAA;
+  position: relative;
+  top: 90px;
+  left: 80px;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+}
+
+.avatar{
+  width: 100px;
+  height: 100px;
+  position:relative;
+  top: 15px;
+  left: 20px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.user-info{
+  padding-top: 100px;
+  text-align: center;
+}
+
+.user-name{
+  font-weight: bold;
+  line-height: 1.6em;
+}
+
+.user-position{
+  text-transform: capitalize;
+  opacity: 0.4;
+  margin-top: 5px;
+  font-size: 0.8em;
+}
+
+.follow-link{
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+  display: inline-block;
+  border: 1px solid lightgrey;
+  padding: 10px 20px;
+  margin-top: 5px;
+}
+
+.follow-counter{
+  margin-top: 10px;
+  font-size: 0.8em;
+  opacity: 0.4;
+}
