@@ -8,7 +8,8 @@ body{
 }
 
 .user-card{
-  width: 300px;
+  --card-width: 300px;
+  width: var(--card-width);
   margin: 20vh auto 0 auto;
 }
 
@@ -18,33 +19,35 @@ body{
 }
 
 .lower-block{
-  height: 250px;
   background-color: #FFFFFF;
+  position: relative;
 }
 
 .img-container{
+  --container-size: 180px;
   background-color: #90DEAA;
-  position: relative;
-  top: 90px;
-  left: 80px;
-  width: 140px;
-  height: 140px;
+  width: var(--container-size);
+  height: var(--container-size);
   border-radius: 50%;
+  position: absolute;
+  top: calc(var(--container-size) / 2 * -1);
+  left: calc((var(--card-width) - var(--container-size)) / 2);
 }
 
 .avatar{
-  width: 100px;
-  height: 100px;
-  position:relative;
-  top: 15px;
-  left: 20px;
+  --image-size: calc(var(--container-size) * 0.72);
+  width: var(--image-size);
+  height: var(--image-size);
   object-fit: cover;
   object-position: top;
+  position: relative;
+  top: calc(var(--image-size) / 10);
+  left: calc(var(--image-size) / 5);
 }
 
 .user-info{
-  padding-top: 100px;
   text-align: center;
+  padding-top: 100px;
 }
 
 .user-name{
@@ -55,7 +58,7 @@ body{
 .user-position{
   text-transform: capitalize;
   opacity: 0.4;
-  margin-top: 5px;
+  margin: 10px 0;
   font-size: 0.8em;
 }
 
@@ -64,7 +67,7 @@ body{
   color: #000000;
   font-weight: bold;
   display: inline-block;
-  border: 1px solid lightgrey;
+  border: 1px solid rgba(211, 211, 211, 0.8);
   padding: 10px 20px;
   margin-top: 5px;
 }
@@ -73,4 +76,5 @@ body{
   margin-top: 10px;
   font-size: 0.8em;
   opacity: 0.4;
+  padding-bottom: 15px;
 }
